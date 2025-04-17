@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sid Tech Corp</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+
+   <link rel="stylesheet" href="/sid/css/styles.css">
+   <link rel="icon" href="/sid/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Load Navbar start -->
+    <div id="navbar-placeholder"></div>
+    <script>
+    fetch("/sid/lib/navbar.html")
+        .then(response => response.text())
+        .then(data => {document.getElementById("navbar-placeholder").innerHTML = data;})
+        .catch(error => console.error("Error loading navbar:", error));
+    </script>
+        <!-- Load Navbar end-->
+    <!-- Carousel Section Start -->
+    <div id="mainBanner" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-inner">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+
+        <div class="carousel-item active" data-bs-interval="7000">
+            <img src="/sid/img/hr-solution.jpg" class="d-block w-100" alt="HR Solutions" />
+            <div class="carousel-caption container-fluid">
+            <h5 class="main-heading">Staffing & Consulting</h5>
+            <hr class="bg-light border-4 border-top border-light" />
+            <p>We provide you with staffing and consulting solutions that meet your business specific goals and needs.</p>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="7000">
+            <img src="/sid/img/guide.jpeg" class="d-block w-100" alt="Your Guide" />
+            <div class="carousel-caption container-fluid">
+            <h5 class="main-heading">Your Guide</h5>
+            <hr class="bg-light border-4 border-top border-light" />
+            <p>Understand the importance of recruiting candidates based on the context of your organization and hire the right talent.</p>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="7000">
+            <img src="/sid/img/software.jpg" class="d-block w-100" alt="Tech Solutions" />
+            <div class="carousel-caption container-fluid">
+            <h5 class="main-heading">Software Development</h5>
+            <hr class="bg-light border-4 border-top border-light" />
+            <p>We are specialized in developing custom software solutions and products for companies.</p>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="7000">
+            <img src="/sid/img/medium-shot-colleagues-learning-together.jpg" class="d-block w-100" alt="Right Place" />
+            <div class="carousel-caption container-fluid">
+            <h5 class="main-heading">Right Place</h5>
+            <hr class="bg-light border-4 border-top border-light" />
+            <p>We know how to hire the right people and find the perfect match between potential candidates and your organizational needs.</p>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="7000">
+            <img src="/sid/img/cloud1.jpg" class="d-block w-100" alt="Cloud Solutions" />
+            <div class="carousel-caption container-fluid">
+            <h5 class="main-heading">Cloud Solutions</h5>
+            <hr class="bg-light border-4 border-top border-light" />
+            <p>We assess and evaluate all your needs and empower your team with cloud adoption and migration.</p>
+        </div>
+        </div>
+    </div>
+    <!-- Carousel Section End -->
+     <!-- Transform business section Start -->
+    <div class="transBus-section" id="about">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6 my-md-4 my-5">
+                    <div class="img-bx">
+                        <img src="/sid/img/high-angle-smiley-colleagues-working-together.jpg" alt="Laptop" class="b-radius" />
+                    </div>
+                </div>
+                <div class="col-md-6 mb-md-4 mb-5">
+                    <span class="small-heading1 line">ABOUT OUR AGENCY</span>
+                    <h2 class="main-heading1">Why Choose Sid Tech Corp?</h2>
+                    <p class="desc1">
+                      We are a leading IT solutions and services company that aims to deliver innovative and cost-effective solutions for diverse industry verticals.
+                    </p>
+                    <!-- <p>Our mission is to empower our clients to achieve more and fast.</p> -->
+                    <!-- <h4 class="mb-2">Why Choose Sid Tech Corp?</h4> -->
+                    <ul class="service-list">
+                        <li><strong>Certified Experts:</strong> Boomi professionals with hands-on expertise.</li>
+                        <li><strong>Proven Success:</strong> Demonstrated results across industries.</li>
+                        <li><strong>Tailored Solutions:</strong> Custom-built around your business needs.</li>
+                        <li><strong>End-to-End Support:</strong> Comprehensive support throughout your integration journey.</li>
+                    </ul>
+
+                    <!-- <span class="small-heading1">Services We Offered</span>
+                    <ul class="transform-items">
+                        <li><i class="fa-regular fa-handshake"></i> Staffing & Consulting</li>
+                        <li><i class="fa-solid fa-laptop-code"></i> Software Development</li>
+                        <li><i class="fa-solid fa-cloud"></i> Cloud Solutions</li>
+                        <li><i class="fa-regular fa-chalkboard-user"></i>Training</li>
+                    </ul> -->
+                    
+                    <!-- Optional Call to Action -->
+                    <a href="/sid/lib/contact.html"><button class="theme-btn1 mt-4">Contact Us</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Transform business section End -->
+     <!-- Video Section Start -->
+    <div class="video-section">
+      <video src="img/bg-video.mp4" autoplay loop muted></video>
+        <!-- <video src="https://osstechllc.com/video/bg-video.mp4" autoplay loop muted></video> -->
+        <div class="video-overlay"></div>
+        <div class="text-box">
+            <span class="small-heading2 text-uppercase">SOLUTIONS WE PROVIDE</span>
+            <h2 class="main-heading2 mb-0">Sid Tech Corp Provides</h2>
+             <!-- <h2 class="main-heading2">Inspiring Staffing Solutions</h2> -->
+            <p class="desc2 my-4">Sid Tech Corp offers innovative and cost-effective IT solutions, specializing in staffing & consulting, software development, cloud solutions, and training. We connect top talent with business needs, build custom tech solutions, enable smooth cloud transitions, and empower teams through tailored upskilling—all while fostering long-term, value-driven partnerships.</p>
+            <div class="services-container">
+                <div class="service-item">
+                    <i class="fa-regular fa-handshake"></i>
+                    <h6>Staffing & Consulting</h6>
+                </div>
+                <div class="service-item">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h6>Software Development</h6>
+                </div>
+                <div class="service-item">
+                    <i class="fa-solid fa-cloud"></i>
+                    <h6>Cloud Solutions</h6>
+                </div>
+                <!-- <div class="service-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <h6>Training</h6> -->
+                </div>
+                <br>
+                <!-- <a href="/sid/lib/services.html"><button class="theme-btn1 active my-4">Learn More</button></a> -->
+            </div>
+        </div>
+    </div>
+    <!-- Video Section End-->
+     <!-- Our services Section Start -->
+  <!-- <div class="our-services-section">
+    <div class="container py-5">
+      <h6 class="small-heading mb-0">OUR SERVICE AREAS</h6>
+      <h1 class="mt-1 mb-4 section-heading">Industries Hiring</h1>
+      <ul class="services-tab">
+        <li class="active" data-target="service1">Logistics & Services</li>
+        <li data-target="service2">Hospitality</li>
+        <li data-target="service3">Manufacturing</li>
+        <li data-target="service4">Education & Government</li>
+        <li data-target="service5">Software/IT</li>
+        <li data-target="service6">Front Line Support</li>
+      </ul>
+
+      <div class="card-area active" id="service1">
+        <div class="container">
+          <div class="row">
+            <div class="text-content">
+              <h2 class="main-heading2">Logistics & Services</h2>
+              <p class="desc">35 Jobs in 8 Different Companies</p>
+            </div>
+            <div class="image-content">
+              <img src="/sid/img/service-1.jpg" alt="Logistics & Services" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-area" id="service2">
+        <div class="container">
+          <div class="row">
+            <div class="text-content">
+              <h2 class="main-heading2">Hospitality</h2>
+              <p class="desc">30 Jobs in 10 Different Companies</p>
+            </div>
+            <div class="image-content">
+              <img src="/sid/img/service-2.jpeg" alt="Hospitality" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-area" id="service3">
+        <div class="container">
+          <div class="row">
+            <div class="text-content">
+              <h2 class="main-heading2">Manufacturing</h2>
+              <p class="desc">50 Jobs in 20 Different Companies</p>
+            </div>
+            <div class="image-content">
+              <img src="/sid/img/service-3.jpeg" alt="Manufacturing" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-area" id="service4">
+        <div class="container">
+          <div class="row">
+            <div class="text-content">
+              <h2 class="main-heading2">Education & Government</h2>
+              <p class="desc">20 Jobs in 12 Different Companies</p>
+            </div>
+            <div class="image-content">
+              <img src="/sid/img/service-4.jpeg" alt="Education & Government" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-area" id="service5">
+        <div class="container">
+          <div class="row">
+            <div class="text-content">
+              <h2 class="main-heading2">Software/IT</h2>
+              <p class="desc">90 Jobs in 12 Different Countries</p>
+            </div>
+            <div class="image-content">
+              <img src="/sid/img/service-5.jpeg" alt="Software/IT" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-area" id="service6">
+        <div class="container">
+          <div class="row">
+            <div class="text-content">
+              <h2 class="main-heading2">Front Line Support</h2>
+              <p class="desc">40 Jobs in 18 Different Companies</p>
+            </div>
+            <div class="image-content">
+              <img src="/sid/img/service-6.jpeg" alt="Front Line Support" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- Our services Section End -->
+
+    <!-- Dell Boomi Integration start -->
+    <div class="container py-5">
+        <div class="row gy-5 align-items-center flex-column flex-md-row">
+        <!-- Image Column -->
+        <div class="col-12 col-md-6 d-flex justify-content-center">
+            <div class="boomi-img-section">
+            <img src="/sid/img/dell-boomi.gif" alt="Dell Boomi Integration" />
+            </div>
+        </div>
+
+        <!-- Text Column -->
+        <div class="col-12 col-md-6 text-center text-md-start">
+            <span class="small-heading3 d-block mb-2">Integration Solution</span>
+            <h2 class="section-heading mb-3">Dell Boomi Integration</h2>
+            <p class="paragraph-style mb-4">
+              At Sid Tech Corp, we specialize in delivering comprehensive Boomi Integration Services that seamlessly connect your applications, data, and processes. As a leading IT solutions provider, our expertise in Boomi's Integration Platform as a Service (iPaaS) empowers businesses to accelerate digital transformation and achieve operational excellence.
+            </p>
+            <a href="/sid/lib/services.html"><button class="theme-btn1">Learn More</button></a>
+        </div>
+        </div>
+    </div>
+    <!-- Dell Boomi Integration end -->
+    <!-- Workato Automation Services start -->
+    <div class="container py-5">
+      <div class="row gy-5 align-items-center flex-column flex-md-row">
+      <!-- Image Column -->
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+          <div class="boomi-img-section">
+          <img src="/sid/img/Workato.gif" alt="Dell Boomi Integration" />
+          </div>
+      </div>
+
+      <!-- Text Column -->
+      <div class="col-12 col-md-6 text-center text-md-start">
+          <!-- <span class="small-heading3 d-block mb-2">Integration Solution</span> -->
+          <h2 class="section-heading mb-3">Workato Automation Services</h2>
+          <p class="paragraph-style mb-4">
+            Accelerate your business workflows with intelligent automation powered by Workato. At Sid Tech Corp, we help businesses integrate apps and automate processes across departments — without writing complex code.
+          </p>
+          <a href="/sid/lib/services.html"><button class="theme-btn1">Learn More</button></a>
+      </div>
+      </div>
+  </div>
+  <!-- Workato Automation Services end -->
+    <!-- Load Footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch("/sid/lib/footer.html")
+            .then(response => response.text())
+            .then(data => {document.getElementById("footer-placeholder").innerHTML = data;})
+            .catch(error => console.error("Error loading footer:", error));
+    </script>
+    <!-- Load Footer end-->
+
+    <!-- Bootstrap JS -->
+    <script src="/sid/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sid Tech Corp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="/sid/css/styles.css">
+    <link rel="icon" href="/sid/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Load Navbar start -->
+<div id="navbar-placeholder"></div>
+<script>
+fetch("/sid/lib/navbar.html")
+    .then(response => response.text())
+    .then(data => {document.getElementById("navbar-placeholder").innerHTML = data;})
+    .catch(error => console.error("Error loading navbar:", error));
+</script>
+    <!-- Load Navbar end-->
+
+    <!-- Intro Banner -->
+    <section style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/sid/img/bg-services.jpg') no-repeat 20% 50%; background-size: cover; height: 400px; display: flex; align-items: center; justify-content: center; color: #fff;">
+        <h1 style="font-size: 50px; font-weight: 700;">Our Services</h1>
+    </section>
+    <!-- Intro Banner -->
+    
+<!--=============== Services ===============-->      
+<!-- <section class="container-service section section__height mx-auto px-1 py-5" id="services"> -->
+<section section class="container-service">  
+        <!-- Card 1 -->
+  <div class="card">
+    <img src="/sid/img/staffing.jpg" alt="Staffing">
+    <div class="card-content">
+      <span>Staffing & Consulting</span>
+      <p>We provide staffing and consulting solutions tailored to your business needs.</p>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card">
+    <img src="/sid/img/develop.jpg" alt="Development">
+    <div class="card-content">
+      <span>Software Development</span>
+      <p>We specialize in developing custom software solutions and products for businesses.</p>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card">
+    <img src="/sid/img/cloud.jpg" alt="Development">
+    <div class="card-content">
+      <span>Cloud Solutions</span>
+      <p>We help businesses with cloud adoption and migration tailored to their needs.</p>
+    </div>
+  </div>
+
+</section>
+<!--=============== Services End ===============-->
+<!-- Dell Boomi Integration start -->
+<div class="container py-5">
+    <div class="row gy-5 align-items-center flex-column flex-md-row">
+    <!-- Image Column -->
+    <div class="col-12 col-md-6 d-flex justify-content-center">
+        <div class="boomi-img-section">
+        <img src="/sid/img/dell-boomi.gif" alt="Dell Boomi Integration" />
+        </div>
+    </div>
+
+    <!-- Text Column -->
+    <div class="col-12 col-md-6 text-center text-md-start">
+        <span class="small-heading3 d-block mb-2">Integration Solution</span>
+        <h2 class="section-heading mb-3">Dell Boomi Integration Services</h2>
+        <p class="paragraph-style mb-4">
+            At Sid Tech Corp, we specialize in delivering comprehensive Boomi Integration Services that seamlessly connect your applications, data, and processes. As a leading IT solutions provider, our expertise in Boomi's Integration Platform as a Service (iPaaS) empowers businesses to accelerate digital transformation and achieve operational excellence.
+        </p>
+        
+        <h4 class="mb-2 mt-4">🔧 Boomi Consulting</h4>
+        <ul class="service-list mb-3">
+            <li><strong>Integration Strategy:</strong> Align solutions with your business goals.</li>
+            <li><strong>Scalable Architecture Design:</strong> Ensure long-term growth potential.</li>
+            <li><strong>Best Practices:</strong> Implementation of industry and Boomi best practices.</li>
+        </ul>
+    
+        <h4 class="mb-2">🚀 Boomi Implementation & Development</h4>
+        <ul class="service-list mb-3">
+            <li><strong>Custom Integration Development:</strong> Connect applications and data sources effectively.</li>
+            <li><strong>API Design & Management:</strong> Secure API publishing and management.</li>
+            <li><strong>Workflow Automation:</strong> Boost operational efficiency with automation.</li>
+        </ul>
+    
+        <h4 class="mb-2">🛠️ Boomi Managed Services</h4>
+        <ul class="service-list mb-3">
+            <li><strong>24/7 Monitoring & Support:</strong> Proactive technical support and issue resolution.</li>
+            <li><strong>Performance Tuning:</strong> Optimize scalability and system performance.</li>
+            <li><strong>Regular Maintenance:</strong> Stay up-to-date with Boomi features and updates.</li>
+        </ul>
+    
+        
+        
+        <!-- Optional Call to Action -->
+        <!-- <a href="#"><button class="theme-btn1 mt-4">Contact Us</button></a> -->
+    </div>
+    
+      
+</div>
+<!-- Dell Boomi Integration end -->
+<!-- Workato Automation Services start -->
+<!-- <div class="container py-5" style="background-image: url(/sid/img/Workato-backgroud.gif);"> -->
+    <div class="container py-5">
+    <div class="row gy-5 align-items-center flex-column flex-md-row">
+    <!-- Image Column -->
+    <div class="col-12 col-md-6 d-flex justify-content-center">
+        <div class="boomi-img-section">
+        <img src="/sid/img/Workato.gif" alt="Dell Boomi Integration" />
+        </div>
+    </div>
+
+    <!-- Text Column -->
+    <div class="col-12 col-md-6 text-center text-md-start">
+        <h2 class="section-heading mb-3">Workato Automation Services</h2>
+        <p class="paragraph-style mb-4">
+            Accelerate your business workflows with intelligent automation powered by Workato. At Sid Tech Corp, we help businesses integrate apps and automate processes across departments — without writing complex code.
+        </p>
+        <ul class="service-list">
+            <li><strong>App Integration:</strong> Connect cloud and on-prem apps like Salesforce, NetSuite, Slack, Jira, and more.</li>
+            <li><strong>Workflow Automation:</strong> Streamline HR, finance, IT, and sales operations with prebuilt or custom recipes.</li>
+            <li><strong>Event-Based Triggers:</strong> Set up real-time automations based on business events.</li>
+            <li><strong>Low-Code Development:</strong> Build and manage automations with a user-friendly interface.</li>
+            <li><strong>Fast, Secure, and Scalable Automations:</strong> Tailored to your business needs.</li>
+        </ul>
+    </div>
+    
+</div>
+<div class="container py-5">
+    <div class="row gy-5 align-items-center flex-column flex-md-row">
+    <!-- Image Column -->
+    <div class="col-12 col-md-6 d-flex justify-content-center">
+        <div class="boomi-img-section">
+        <img src="/sid/img/netsuite.gif" alt="Dell Boomi Integration" />
+        </div>
+    </div>
+
+    <!-- Text Column -->
+    <div class="col-12 col-md-6 text-center text-md-start">
+        <h2 class="section-heading mb-3 mt-5">NetSuite Integration Services</h2>
+        <p class="paragraph-style mb-4">
+            As NetSuite experts, we deliver end-to-end integration solutions that connect your ERP with CRMs, eCommerce, HCM, and third-party systems using Boomi, Workato, or native SuiteTalk APIs.
+        </p>
+        <ul class="service-list">
+            <li><strong>Order-to-Cash & Procure-to-Pay Automation:</strong> Simplify key financial processes.</li>
+            <li><strong>Real-Time Inventory, Invoicing, and Customer Sync:</strong> Enhance operational efficiency.</li>
+            <li><strong>Custom SuiteScript & Saved Search Integration:</strong> Tailored solutions for your business needs.</li>
+            <li><strong>NetSuite ↔ Salesforce, Shopify, Workday Integration:</strong> Unlock seamless integrations.</li>
+            <li><strong>Unlock the Full Potential of NetSuite:</strong> Maximize your investment with seamless integrations.</li>
+        </ul>
+    </div>
+    
+</div>
+<div>
+<h4 class="mb-2">🔄 Data Migration & Synchronization</h4>
+        <ul class="service-list mb-3">
+            <li><strong>Accurate Data Mapping:</strong> Transform and map data efficiently.</li>
+            <li><strong>Real-Time Data Sync:</strong> Sync data across all integrated systems.</li>
+        </ul>
+    
+        <h4 class="mb-2">🌐 B2B/EDI Integration</h4>
+        <ul class="service-list mb-4">
+            <li><strong>Fast Partner Onboarding:</strong> Simplify integration with standard solutions.</li>
+            <li><strong>Document Mapping & Translation:</strong> Ensure smooth communication with partners.</li>
+        </ul>
+    </div>
+<!-- Workato Automation Services end -->
+<!-- Load Footer -->
+<div id="footer-placeholder"></div>
+<script>
+    fetch("/sid/lib/footer.html")
+        .then(response => response.text())
+        .then(data => {document.getElementById("footer-placeholder").innerHTML = data;})
+        .catch(error => console.error("Error loading footer:", error));
+</script>
+<!-- Load Footer end-->
+    
+</body>
+</html>

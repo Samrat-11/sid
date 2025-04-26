@@ -8,9 +8,6 @@ document.querySelectorAll('.services-tab li').forEach(item => {
   });
 });
 //  Our services Section End
-// carousel Start
-
-// carousel End
 /*=============== Contact form Start ===============*/
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelector("form").addEventListener("submit", function (event) {

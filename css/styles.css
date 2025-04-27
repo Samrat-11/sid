@@ -267,6 +267,21 @@ li.nav-item1>a {
   font-size: 1.2rem;
   margin-right: 10px;
 }
+
+.theme-btn1 {
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+  padding: 0.6rem 1.8rem;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.theme-btn1:hover {
+  background-color: #000;
+  color: #fff;
+}
 /* Transform business section End */
 /* Video Section Start */
 .video-section {
@@ -549,46 +564,39 @@ li.nav-item1>a {
 }
 /* Our services Section Start */
 /* Dell Boomi Integration Start  */
-.boomi-img-section img {
+.boomi-img {
   width: 100%;
-  height: auto;
+  max-width: 400px;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
-
 .small-heading3 {
   color: hsl(174, 63%, 40%);
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
 }
-
-.section-heading {
+.section-heading3 {
   font-size: 2.2rem;
   font-weight: 700;
   color: #111;
+  margin-bottom: 1rem;
 }
-
-.paragraph-style {
+.service-text {
   font-size: 1rem;
   line-height: 1.7;
-  color: #555;
-}
-
-.theme-btn1 {
-  background-color: #fff;
-  border: 2px solid #000;
   color: #000;
-  padding: 0.6rem 1.8rem;
-  font-weight: 600;
-  border-radius: 30px;
-  transition: all 0.3s ease;
+  margin-bottom: 1.5rem;
+  text-indent: 2em;
+}
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.theme-btn1:hover {
-  background-color: #000;
-  color: #fff;
-}
 /* Dell Boomi Integration End */
 /*========== Submit button start ==========*/
 .button {

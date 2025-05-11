@@ -45,7 +45,7 @@ hr.border-light {
   color: #fff;
   position: relative;
   width: fit-content;
-  font-family: "Merienda", cursive, sans-serif;
+  font-family: "Arial", cursive, sans-serif;
   padding-right: 1vw;
 }
 
@@ -349,7 +349,7 @@ li.nav-item1>a {
   font-size: 1em;
   margin: 15px 0;
   color: #ddd;
-  backdrop-filter: blur(7px);
+  /* backdrop-filter: blur(7px); */
   border-radius: 15px;
 }
 

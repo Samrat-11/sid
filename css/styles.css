@@ -6,6 +6,12 @@ body {
 }
 body {
   font-family: "Outfit", sans-serif;
+  padding-top: 10vh;
+}
+@media (max-width: 1200px) {
+  body {
+    padding-bottom: 15vh;
+  }
 }
 
 /* Carousel Section Start */
@@ -69,6 +75,7 @@ hr.border-light {
 }
 
 .carousel-item>img {
+  /* height: 100vh; */
   height: 100vh;
   object-fit: cover;
   transform: scale(1);

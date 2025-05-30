@@ -7,14 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/sid/css/styles.css">
+    <link rel="icon" href="/sid/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Load Navbar start -->
 <div id="navbar-placeholder"></div>
 <script>
-fetch("lib/navbar.html")
+fetch("/sid/lib/navbar.html")
     .then(response => response.text())
     .then(data => {document.getElementById("navbar-placeholder").innerHTML = data;})
     .catch(error => console.error("Error loading navbar:", error));
@@ -22,7 +22,7 @@ fetch("lib/navbar.html")
     <!-- Load Navbar end-->
 
     <!-- Intro Banner -->
-    <section style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/bg-services\ \(2\).jpg') no-repeat 20% 50%; background-size: cover; height: 400px; display: flex; align-items: center; justify-content: center; color: #fff;">
+    <section style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/sid/img/bg-services\ \(2\).jpg') no-repeat 20% 50%; background-size: cover; height: 400px; display: flex; align-items: center; justify-content: center; color: #fff;">
         <h1 style="font-size: 50px; font-weight: 700;">Our Services</h1>
     </section>
     <!-- Intro Banner -->
@@ -33,7 +33,7 @@ fetch("lib/navbar.html")
 <div class="container py-3" id="boomi">
     <div class="row align-items-center">
       <div class="col-md-4 text-center">
-        <img src="img/boomi%20image.webp" alt="Dell Boomi Integration" class="boomi-img">
+        <img src="/sid/img/boomi%20image.webp" alt="Dell Boomi Integration" class="boomi-img">
       </div>
       <div class="col-md-8">
         <div class="small-heading3">Integration Solution</div>
@@ -53,7 +53,7 @@ fetch("lib/navbar.html")
 <div class="container py-3" id="workato">
     <div class="row align-items-center">
       <div class="col-md-4 text-center">
-        <img src="img/workato2.jpg" alt="Dell Boomi Integration" class="boomi-img">
+        <img src="/sid/img/workato2.jpg" alt="Dell Boomi Integration" class="boomi-img">
       </div>
       <div class="col-md-8">
         <div class="small-heading3">Integration Solution</div>
@@ -73,7 +73,7 @@ fetch("lib/navbar.html")
 <div class="container py-3" id="netsuite">
     <div class="row align-items-center">
       <div class="col-md-4 text-center">
-        <img src="img/netsuite.jpg" alt="Dell Boomi Integration" class="boomi-img">
+        <img src="/sid/img/netsuite.jpg" alt="Dell Boomi Integration" class="boomi-img">
       </div>
       <div class="col-md-8">
         <div class="small-heading3">Integration Solution</div>
@@ -93,7 +93,7 @@ fetch("lib/navbar.html")
 <div class="container py-3" id="software">
   <div class="row align-items-center">
     <div class="col-md-4 text-center">
-      <img src="img/Software.png" alt="Dell Boomi Integration" class="boomi-img">
+      <img src="/sid/img/Software.png" alt="Dell Boomi Integration" class="boomi-img">
     </div>
     <div class="col-md-8">
       <div class="small-heading3">Development Solution</div>
@@ -113,7 +113,7 @@ fetch("lib/navbar.html")
 <div class="container py-3" id="staffing">
   <div class="row align-items-center">
     <div class="col-md-4 text-center">
-      <img src="img/staffing.jpg" alt="Dell Boomi Integration" class="boomi-img">
+      <img src="/sid/img/staffing.jpg" alt="Dell Boomi Integration" class="boomi-img">
     </div>
     <div class="col-md-8">
       <div class="small-heading3">Hr's Solution</div>
@@ -132,7 +132,7 @@ fetch("lib/navbar.html")
 <div class="container py-3" id="cloud">
   <div class="row align-items-center">
     <div class="col-md-4 text-center">
-      <img src="img/cloud-services.jpg" alt="Dell Boomi Integration" class="boomi-img">
+      <img src="/sid/img/cloud-services.jpg" alt="Dell Boomi Integration" class="boomi-img">
     </div>
     <div class="col-md-8">
       <div class="small-heading3">Database Solution</div>
@@ -151,7 +151,7 @@ fetch("lib/navbar.html")
 <div class="container py-3" id="bps">
   <div class="row align-items-center">
     <div class="col-md-4 text-center">
-      <img src="img/BPS.jpg" alt="Dell Boomi Integration" class="boomi-img">
+      <img src="/sid/img/BPS.jpg" alt="Dell Boomi Integration" class="boomi-img">
     </div>
     <div class="col-md-8">
       <div class="small-heading3">Business Solution</div>
@@ -186,7 +186,7 @@ fetch("lib/navbar.html")
 <!-- Load Footer -->
 <div id="footer-placeholder"></div>
 <script>
-    fetch("lib/footer.html")
+    fetch("/sid/lib/footer.html")
         .then(response => response.text())
         .then(data => {document.getElementById("footer-placeholder").innerHTML = data;})
         .catch(error => console.error("Error loading footer:", error));

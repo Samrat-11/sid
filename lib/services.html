@@ -12,13 +12,13 @@
 </head>
 <body>
     <!-- Load Navbar start -->
-<div id="navbar-placeholder"></div>
-<script>
-fetch("navbar.html")
-    .then(response => response.text())
-    .then(data => {document.getElementById("navbar-placeholder").innerHTML = data;})
-    .catch(error => console.error("Error loading navbar:", error));
-</script>
+    <div id="navbar-placeholder"></div>
+    <script>
+    fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => {document.getElementById("navbar-placeholder").innerHTML = data;})
+        .catch(error => console.error("Error loading navbar:", error));
+    </script>
     <!-- Load Navbar end-->
 
     <!-- Intro Banner -->

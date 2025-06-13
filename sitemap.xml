@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+     <url>
+    <loc>https://www.sidtechcorp.com/</loc>
+  </url>
+  <url>
+    <loc>https://www.sidtechcorp.com/about</loc>
+  </url>
+  <url>
+    <loc>https://www.sidtechcorp.com/services</loc>
+  </url>
+  <url>
+    <loc>https://www.sidtechcorp.com/contact</loc>
+  </url>
+
   <url>
     <loc>https://www.sidtechcorp.com/</loc>
     <lastmod>2025-06-13</lastmod>
@@ -26,3 +39,5 @@
   </url>
 
 </urlset>
+<!-- This sitemap is generated to help search engines index the pages of the SID Tech Corp website efficiently. -->
+<!-- Ensure to update the lastmod dates as content changes to keep the sitemap current. -->

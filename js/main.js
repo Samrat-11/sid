@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       let whatsappMessage = `Hello, I have a query:\n\n Name: ${fullName}\n Email: ${email}\n Subject: ${subject}\n Message: ${message}`;
 
       // Your WhatsApp number (with country code, without + sign)
-      let whatsappNumber = "+1-347-969-8733"; // Change this to your WhatsApp number
+      let whatsappNumber = "13479698733"; // Change this to your WhatsApp number
 
       // Create the WhatsApp URL
       let whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
